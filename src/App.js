@@ -5,8 +5,9 @@ import "./styles.css";
 export default function App() {
   return (
     <div className="App">
-      <ApiData />
       <h1>ByNoGame Proje Çalışması</h1>
+      <ApiData />
+      
     </div>
   );
 }

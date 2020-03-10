@@ -1,31 +1,29 @@
 import React from "react";
 
 class ApiData extends React.Component {
-  constructor(props) {
+  constructor(props){
     super(props);
-    this.state = {
-      data: ""
-    };
+    this.state={
+      data:[]
+    }
   }
 
   componentDidMount() {
-    console.log("jbjdbfdsbfsb");
-    fetch(
-      "api.openweathermap.org/data/2.5/weather?q={Istanbul}&appid={8aa3c4ffb40dc9218a7e46d32f2fe2ff}"
-    )
-      .then(response => {
-        response.text();
-        console.log(response.body);
-      })
-      .then(api => {
-        console.log(api);
-        this.setState = {
-          data: api
-        };
-      });
+  fetch(
+      'https://api.nasa.gov/planetary/apod?api_key=7gTfQoM9v41twf39OxS7sgAZf8ILQ8np5c9eKa66')
+      .then((res)=>res.json())
+      .then((data)=>
+      {
+       this.setState({
+         data
+       })
+    });
+   
   }
   render() {
-    return <div>{this.state.data}</div>;
+    return <div className="head">
+{this.state.data.title}
+    </div>;
   }
 }
 export default ApiData;

@@ -1,4 +1,4 @@
-# This project built for an Interview process for Byno Games.
+# This project built for an Interview process for Byno Game.
 
 ## I used React,SaSS and Webpack for the development enviroment.
 
