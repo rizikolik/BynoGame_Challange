@@ -14,23 +14,31 @@ class Card extends React.Component{
             .then((res)=>res.json())
             .then((data)=>
             {
+			console.log(data.photos)
              this.setState({
-               data
+             data :data.photos
              })
           });
         
          
         }
     render(){
-       
-        const items = this.state.data.photos
-        console.log(typeof items)
+       const items=this.state.data.map((ele)=>{
+		   return (
+		   <div className="card">
+			   <div></div>
+				     <div>{ele.camera.full_name}</div>
+				    <img  src={ele.img_src} />
+				    
+				   
+			   </div>
+		   )
+	   })
+    
 
         return(
 <div className="cardHolder">
-<ul>
-
-</ul>
+{items}
 </div>
         )
     }
