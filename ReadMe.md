@@ -1,5 +1,9 @@
-# This project built for an Interview process for Byno Game.
+# Bu proje Byno Game Front End Developer pozisyonu için oluşturuldu.
 
-## I used React,SaSS and Webpack for the development enviroment.
-
-## Also i got some data from an api for the main page .
+## Kullanılan teknoljiler :React, Sass,Npm ve Nasa Api.
+## Çalıştırmak için terminalde :
+* Öncelikle Proje git clone ile kopyalanmalı .
+* Daha sona proje klasörüne girilip ;
+  * npm install
+  * npm start 
+  * http://localhost:3000/ adresine gidin ve web sayfasını görüntüleyiniz.

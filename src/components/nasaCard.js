@@ -25,10 +25,9 @@ class Card extends React.Component{
     render(){
        const items=this.state.data.map((ele)=>{
 		   return (
-		   <div className="card">
-			   <div></div>
-				     <div>{ele.camera.full_name}</div>
-				    <img  src={ele.img_src} />
+		   <div >
+			  <div className="card">{ele.camera.full_name}</div>
+				    <img className="card"  src={ele.img_src} />
 				    
 				   
 			   </div>

@@ -1,12 +1,15 @@
 import React from "react";
+import Header from "./components/header.js";
 import Card from "./components/nasaCard";
-import "./styles.css";
+import Footer from "./components/footer.js";
+import "./styling.scss";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>ByNoGame Proje Çalışması</h1>
+      <Header/>
       <Card />
+		  <Footer/>
       
     </div>
   );

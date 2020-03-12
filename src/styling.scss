@@ -1,0 +1,39 @@
+
+
+h1{
+    text-align:center;
+}
+	
+
+
+
+.cardHolder{
+display: grid;
+  grid-template-columns: 50% 50%;
+	grid-teplate-rows:200px 200px 200px 200px;
+  grid-gap: 10px;
+ 
+  padding: 10px;
+	.card{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+	width:100%;
+}
+}
+
+.copy{
+	color:black;
+	text-align:center;
+}
+ @media screen and (max-width:600px) {
+   .cardHolder{
+display: grid;
+  grid-template-columns: 100%;
+	grid-teplate-rows:100%;
+  grid-gap: 10px;
+ 
+  padding: 10px;
+}
+  
+}
